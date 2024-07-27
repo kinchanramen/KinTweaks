@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "kintweaks",
+  "version": "${version}",
+  "name": "KinTweaks",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/PcUser/KinTweaks"
+  },
+  "license": "MIT",
+  "icon": "assets/kintweaks/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.kinchanramen.github.kintweaks.client.KinTweaksClient"
+    ],
+    "main": [
+      "net.kinchanramen.github.kintweaks.KinTweaks"
+    ],
+    "modmenu": [
+      "net.kinchanramen.github.kintweaks.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "kintweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
